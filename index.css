@@ -1,0 +1,41 @@
+figure {
+  width: 200px;
+  height: max-content;
+}
+
+figure > canvas,
+figure > img {
+  box-sizing: border-box;
+  border: 1px solid black;
+  width: 200px;
+  height: 200px;
+}
+
+figcaption {
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+}
+
+.canvases {
+  display: flex;
+  font-weight: bold;
+}
+
+#expected {
+  opacity: 0;
+  /* transition: opacity ease-in 0.5s; */
+}
+
+#expected.shown {
+  opacity: 1;
+  transition: opacity ease-in-out 0.5s;
+}
+
+.input {
+  margin-left: 39px;
+}
+
+.input > input {
+  height: 40px;
+}
